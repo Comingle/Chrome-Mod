@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="mod.js"></script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="container">
+    <label>
+      Port:
+      <select id="port-picker"></select>
+    </label>
+
+    <label>
+      Status:
+      <span id="status">Loading</span>
+    </label>
+
+    <label>
+      Motor 0:
+      <input class='pi' id="0" type="range" min="0" max="255" value="0">
+    </label>
+
+    <label>
+      Motor 1:
+      <input class='pi' id="1" type="range" min="0" max="255" value="0">
+    </label>
+
+    <label>
+      Motor 2:
+      <input class='pi' id="2" type="range" min="0" max="255" value="0">
+    </label>
+    <label>
+      All motors: <input type='checkbox' id='all-motors'>
+    </label>
+
+    <div id="image"></div>
+  </div>
+
+</body>
+</html>
