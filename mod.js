@@ -44,7 +44,8 @@ function setStatus(status) {
 
 function buildPortPicker(ports) {
   var eligiblePorts = ports.filter(function(port) {
-    return !port.path.match(/[Bb]luetooth/) && port.path.match(/\/dev\/tty/);
+    return (!port.path.match(/[Bb]luetooth/) && port.path.match(/\/dev\/tty/)) || 
+      port.path.match(/^COM/);
   });
 
   var portPicker = document.getElementById('port-picker');
